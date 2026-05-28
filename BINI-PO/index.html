@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Biniye | Front-End Developer Portfolio</title>
+    <link rel="stylesheet" href="/BINI-PO/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar - Reduced Height -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">TOLESA MOSISA<span>.</span></h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Now fully visible -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <!-- Left side - Large rounded rectangle photo -->
+            <div class="hero-photo-large">
+                <img src="/BINI-PO/images/wall.png" alt="Biniye" id="large-photo">
+            </div>
+            
+            <!-- Center content with small circular photo -->
+            <div class="hero-content">
+                <div class="hero-photo-small">
+                    <img src="/BINI-PO/images/small.jpg" alt="Biniye Avatar" id="small-photo">
+                </div>
+                <h1>Hello,I'm <span>Tolesa</span></h1>
+                <h3 id="typing-text"></h3>
+                <p>Passionate Front-End Developer & Computer Science student at Arsi University.<br>Building modern, responsive, and user-friendly web experiences.</p>
+                <a href="#contact" class="btn">Hire Me →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="pp">
+                    <p class="p1">Passionate Front-End Developer and leader of the ARU TECH-Based Club at Arsi University. A 3rd year Computer Science student with a CGPA of 3.85, focused on web development, innovation, and building future startups.</p>
+                    <p class="p2">I love building responsive websites, working in teams, and continuously learning new technologies. My goal is to create international-level systems that make a difference.</p>
+                    </div><p>I am also a 3rd year Business Management student at Rift Valley University, where I am developing leadership, communication, and entrepreneurial skills that complement my passion for technology.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3.85</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">A+</span>
+                            <span class="stat-label">Web Dev</span>
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Updated with Logos and Percentages -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            
+            <!-- Main Skills with Logos -->
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <span class="skill-percent">60%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                    </div>
+                    <h3>C++</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                    <span class="skill-percent">50%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+
+            <!-- Additional Tools Box -->
+            <div class="tools-section">
+                <h3>Tools & Technologies</h3>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javafx/javafx-original.svg" alt="JavaFX">
+                        <span>JavaFX</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <h2>My Certificates</h2>
+            <p class="section-subtitle">Click any certificate to view or verify online</p>
+            <div class="certificates-grid">
+                
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="/BINI-PO/images/programing fundamental.png" alt="Web Development Certificate">
+                        <div class="certificate-overlay">
+                            <span>🔗 View Certificate</span>
+                        </div>
+                    </div>
+                    <h3>Fundamental programing</h3>
+                    
+                    <a href="https://www.udacity.com/certificate/e/884160fe-8736-11ef-ad6e-2f6499c52c10" target="_blank" class="cert-link">Verify Certificate →</a>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="/BINI-PO/images/arteficial.jpg" alt="AI Certificate">
+                        <div class="certificate-overlay">
+                            <span>🔗 View Certificate</span>
+                        </div>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>fundamental of machine learning and Deep learning</p>
+                    <a href="https://www.udacity.com/certificate/e/02fcbc96-a05c-11f0-8bad-2729d4a7a83b" target="_blank" class="cert-link">Verify Certificate →</a>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="/BINI-PO/images/data science.png" alt="data Science Certificate">
+                        <div class="certificate-overlay">
+                            <span>🔗 View Certificate</span>
+                        </div>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>fundamental concepts of data Science</p>
+                    <a href="https://www.udacity.com/certificate/e/0e3346ac-22df-11f0-a0ff-b784a753c442" target="_blank" class="cert-link">Verify Certificate →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Updated with ARU TECH Club -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-container">
+                
+                <!-- Project 1: Portfolio Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/BINI-PO/images/portfolio.png" alt="Portfolio Project">
+                    </div>
+                    <h3>Personal Portfolio</h3>
+                    <p>Modern responsive portfolio website with animations and contact form</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                     <!--<a href="#" class="project-link">View Project →</a> -->
+                </div>
+
+                <!-- Project 2: ARU TECH Club Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/BINI-PO/images/ARU.png" alt="ARU TECH Club Project">
+                    </div>
+                    <h3>ARU TECH Club</h3>
+                    <p>Student technology community website with events and team members</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <!-- <a href="#" class="project-link">View Project →</a>-->
+                </div>
+
+                <!-- Project 3: Restaurant Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/BINI-PO/images/RES.png" alt="Restaurant Project">
+                    </div>
+                    <h3>Restaurant Website</h3>
+                    <p>Responsive restaurant landing page with menu and reservation system</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <!--<a href="#" class="project-link">View Project →</a>-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+            
+            <!-- Social Media Icons - Circular Clickable -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tolosa-mosisa-38062835b/" target="_blank" class="social-circle">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/bad-tl" target="_blank" class="social-circle">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/bad_tll" target="_blank" class="social-circle">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+            
+            <form id="contact-form">
+                <input type="text" id="user-name" placeholder="Your Full Name" required>
+                <input type="email" id="user-email" placeholder="Your Email Address" required>
+                <input type="text" id="user-subject" placeholder="Subject" required>
+                <textarea id="user-message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message ✉️</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tolesa</h3>
+                    <p>Front-End Developer<br>Arsi University, Ethiopia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>📧 tolosatolesa@gmail.com</p>
+                    <p>💼 Available for freelance work</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tolesa_Mosisa | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/BINI-PO/script.js"></script>
+</body>
+</html>
